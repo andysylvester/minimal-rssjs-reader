@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Minimal Rss.js Feed Reader</title>
+		<script src="http://fargo.io/code/jquery-1.9.1.min.js"></script>
+		<script>
+			var theFeed;
+			function onGetRss (rss) {
+				theFeed = rss;
+                displayFeeds();
+			}
+			$.ajax ({ 
+				url: "http://scripting.com/rss.js",  
+				dataType: "jsonp"
+				});
+      function displayFeeds() {
+        var feedText = "";
+        // Create title
+        for (var i in theFeed.rss.channel.item) {
+           feedText = feedText + "<a href=" + theFeed.rss.channel.item[i].link + ">" + theFeed.rss.channel.item[i].title + "</a><br>"; 
+           feedText = feedText + theFeed.rss.channel.item[i].description + "<br>"; 
+           feedText = feedText + "<br>";
+        }
+	      document.getElementById("demo").innerHTML = feedText; 
+      }
+			</script>
+	</head>
+<body>
+    <h1><center>Minimal Rss.js Feed Reader</center></h1>
+    <p id="demo">Wating for feed to load....</p> 
+</body>
+</html>
