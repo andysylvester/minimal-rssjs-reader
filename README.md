@@ -4,7 +4,7 @@ README.md
 Overview
 --------
 
-This is an sample application for reading RSS feeds converted to JSON format. I used my <a href="https://github.com/andysylvester/minimal-riverjs-reader/">Minimal River.js Reader</a> as a baseline. This is a reader for reading an individual feed, but it is wrapped in the same JSONP wrapper as <a href="
+This is an sample application for reading RSS feeds converted to JSON format. I used my <a href="https://github.com/andysylvester/minimal-riverjs-reader/">Minimal River.js Reader</a> as a baseline. This is a reader for reading an individual feed, but it is wrapped in the same JSONP wrapper as <a href="http://riverjs.org/">River.js</a> feeds.
 
 You can see the app running at http://andysylvester.com/files/reader_rssjs/
 
