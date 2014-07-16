@@ -8,7 +8,7 @@ This is an sample application for reading RSS feeds converted to JSON format. I 
 
 You can see the app running at http://andysylvester.com/files/reader_rssjs/
 
-This <a href="http://andysylvester.com/2014/07/14/minimal-river-js-reader/">blog post</a> also talks about the app.
+This <a href="http://andysylvester.com/2014/07/16/minimal-rss-js-reader/">blog post</a> also talks about the app.
 
 Credits
 -------
